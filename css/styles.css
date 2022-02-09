@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&family=Roboto:wght@300;400&display=swap');
+
+body {
+    background-color: rgb(20, 20, 20);
+    overflow: hidden;
+    font-family: "roboto";
+    margin:10% 0 0 0;
+    position: relative;
+    line-height: 100px;
+}
+
+h1, h2 {
+    text-align: center;
+    font-size: 90px;
+    line-height: 150px;
+}
+
+.wrapper {
+    display: flex;
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+     perspective: 600px; /*the higher the number the lesser the efffect */
+}
+
+.scroll-text {
+    color:gold;
+    font-size: 80px;
+    line-height: 100px;
+    font-weight: bold;
+    text-align: justify;
+    position: relative;
+    animation: scroll 30s linear;  /* forward - so that it does not repeat the animation */
+    animation-iteration-count: 999;
+}
+
+@keyframes scroll {
+    from {top:0;transform: translateZ(0) rotateX(15deg);}
+    to {top: -7500px;transform: translateZ(-2000px) rotateX(16deg)}
+   
+}
+.audio {position: absolute;
+top:590px;}
